@@ -7,6 +7,7 @@ import lombok.extern.slf4j.Slf4j;
 import org.mindrot.jbcrypt.BCrypt;
 import org.springframework.stereotype.Service;
 
+
 @Slf4j
 @Service
 @RequiredArgsConstructor
@@ -51,5 +52,10 @@ public class UserService {
         }
         return vo;
     }
-
+    public UserInfoVo getUserInfo(int targetIuser){
+        return mapper.selUserInfo(targetIuser);
+    }
+    public int patchUserPic(UserPatchPicDto dto){
+        return mapper.upUserPic(dto);
+    }
 }
