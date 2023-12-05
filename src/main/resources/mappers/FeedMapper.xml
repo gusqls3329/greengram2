@@ -43,6 +43,7 @@
     <delete id="delFeed">
         DELETE FROM t_feed
         WHERE ifeed = #{ifeed}
+
     </delete>
 
 
