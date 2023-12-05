@@ -29,7 +29,7 @@ public class FeedService {
         FeedInsProcDto pDto = FeedInsProcDto.builder()
                 .iuser(dto.getIuser())
                 .contents(dto.getContents())
-                .location(dto.getLocation())
+                .location(dto.getLocation())//
                 .pics(dto.getPics())
                 .build();
         int feedAffectedRows = mapper.insFeed(pDto);
